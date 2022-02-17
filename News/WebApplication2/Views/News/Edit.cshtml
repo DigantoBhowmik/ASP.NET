@@ -1,0 +1,15 @@
+﻿@model WebApplication2.Models.Database.News
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit</h2>
+
+<form action="/News/Edit" method="post">
+    <input type="text" name="Id" value="@Model.Id" class="form-control" placeholder="Id">
+    <input type="text" name="Title" value="@Model.Title" class="form-control" placeholder="Title">
+    <input type="text" name="Description" value="@Model.Description" class="form-control" placeholder="Description">
+    <input type="text" name="Category" value="@Model.Category" class="form-control" placeholder="Category">
+    <input type="text" name="PublishDate" value="@Model.PublishDate" class="form-control" placeholder="PublishDate">
+    <input type="submit" style="color:red" value="Publish" />
+</form>
