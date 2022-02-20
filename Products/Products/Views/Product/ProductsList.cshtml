@@ -1,0 +1,22 @@
+﻿@model List<Products.Models.Database.Product>
+@{
+    ViewBag.Title = "ProductsList";
+}
+
+<h2>ProductsList</h2>
+@foreach (var p in Model)
+{
+    <div class="col-md-3">
+        <div>
+            <div class="card-details">
+                <h1><b>@p.Name</b></h1>
+                <p class="cards-p">
+                    <i class="fas fa-bolt"></i>
+                    From <span id="price"> @p.Price</span> taka
+                </p>
+                <p><i class="fas fa-clock"></i>Duration :@p.Qty</p>
+            </div>
+
+        </div>
+    </div>
+}
